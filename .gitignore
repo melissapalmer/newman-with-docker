@@ -1,1 +1,3 @@
 /.vagrant
+/playbooks/roles/geerlingguy.docker
+/playbooks/roles/geerlingguy.pip
