@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes 
+
+  vars:
+    docker_edition: 'ce'
+    docker_install_compose: False
+
+  roles:
+  - geerlingguy.pip
+  - geerlingguy.docker

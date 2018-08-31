@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="GOOGLE" tests="1" time="0.986">
-  <testsuite name="ViewHomePage" id="5e384d1c-c08a-4243-a8cc-e36b5c295847" tests="2" failures="0" errors="0" time="0.986">
-    <testcase name="Status code is 200" time="0.986"/>
-    <testcase name="Response time is less than 5000ms" time="0.986"/>
-  </testsuite>
-</testsuites>

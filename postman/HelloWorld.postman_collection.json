@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "93c25630-462c-44a2-b63e-0a5082d91f37",
+		"name": "HelloWorld",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-hello-world",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "febc428a-320c-46e9-b846-1d3a944ea436",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 2000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+							"});",
+							"",
+							"pm.test(\"Body has Hello World!\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Hello World!\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://helloworld:80/",
+					"protocol": "http",
+					"host": [
+						"helloworld"
+					],
+					"port": "80",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

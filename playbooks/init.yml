@@ -1,0 +1,8 @@
+# This playbook is to be run first, to prepare servers for all other playbooks
+- hosts: all
+  become: yes
+  gather_facts: no
+
+  pre_tasks:
+    - name: 'install python2'
+      raw: sudo apt-get update && apt-get -y install python-simplejson
